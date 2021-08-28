@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arreglos</title>
+</head>
+<body>
+
+	<h1 style="text-align: center;"> Arreglos</h1>
+
+
+    <div>
+    	<p id="demo"></p>
+	    <p id="demo1"></p>  
+	    <p id="demo2"></p>  	
+	    <p id="demo3"></p>  	
+    </div>
+
+	
+
+	<script>
+		
+		const cars = ["Toyota", "Volvo", "BMW"];		
+
+		//let x = cars[0];
+
+		cars[1] = "Audi";		
+
+		cars.sort();
+
+		cars.push("RAM");
+
+		document.getElementById('demo').innerHTML = cars;
+
+		document.getElementById("demo1").innerHTML = cars[2];
+
+		document.getElementById("demo2").innerHTML = ("Longitud del arreglo:"+cars.length);		
+
+				
+
+		let y = cars.length;
+
+		let text = "<ul>";
+		for (let i = 0; i < y; i++) {
+            text +="<li>" +cars[i] + "</li>";
+		}
+		text += "</ul>";
+
+		document.getElementById('demo3').innerHTML = text;
+
+	</script>
+</html>
