@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Array Method</title>
+</head>
+<body>
+
+	<button onclick="myFunction()">Try it</button>
+
+	<p id="demo"></p>
+	<p id="demo1"></p>
+
+	<script>
+		
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+		//Asigna a x el ultimo elemento del agrreglo eliminado por el metodo pop
+		//let x = fruits.pop();
+
+		//The push() method adds a new element to an array (at the end)
+		fruits.push("kiwi");
+
+		//The shift() method removes the first array element and "shifts" all other elements to a lower index.
+		//let y = fruits.shift();
+
+		document.getElementById('demo').innerHTML = fruits.join("*");
+
+		function myFunction(){
+			//The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+			fruits.unshift("Lemon");
+			document.getElementById("demo").innerHTML = fruits;
+		}
+
+		const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+
+        // Concatenate (join) myGirls and myBoys
+        const myChildren = myGirls.concat(myBoys);  
+
+        document.getElementById("demo1").innerHTML = myChildren;
+
+	</script>
+
+</body>
+</html>
